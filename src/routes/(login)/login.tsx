@@ -9,6 +9,7 @@ export default function LoginLayout() {
 		<div>
 			<h1>Login Page</h1>
 			<LoginAnimation on={isRouting}>
+				
 				<Outlet/>
 			</LoginAnimation>
 		</div>
