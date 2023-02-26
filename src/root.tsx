@@ -88,7 +88,7 @@ export default function Root() {
         </Head>
         <Body>
           <GlobalStyles />
-          <Suspense>
+          <Suspense fallback={<>Loading...</>}>
             <ErrorBoundary>
               <A href="/">Index</A>
               <A href="/about">About</A>
