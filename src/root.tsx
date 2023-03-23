@@ -14,6 +14,7 @@ import {
   Title,
 } from "solid-start";
 import { css, renderSheets, StyleRegistry } from "solid-styled";
+import createMiddleware from "./middleware";
 
 function GlobalStyles() {
   css`
@@ -77,6 +78,8 @@ export default function Root() {
   const sheets:any = [];
   useAssets(() => renderSheets(sheets));
 
+  createMiddleware()
+
   return (
     <StyleRegistry styles={sheets}>
       <Html lang="en">
@@ -95,6 +98,8 @@ export default function Root() {
               <A href="/login">Login</A>
               <A href="/login/create">Create</A>
               <A href="/login/sign">Sign</A>
+              <A href="/server">Server</A>
+              <A href="/abreviador">Abreviador</A>
               <Routes>
                 <FileRoutes />
               </Routes>

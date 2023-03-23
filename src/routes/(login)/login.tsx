@@ -1,5 +1,6 @@
-import { Outlet, useIsRouting } from "solid-start";
+import { Outlet, useIsRouting, Title } from "solid-start";
 import LoginAnimation from "~/components/LoginAnimations";
+
 
 export default function LoginLayout() {
 
@@ -7,6 +8,7 @@ export default function LoginLayout() {
 
 	return (
 		<div>
+			<Title>Login</Title>
 			<h1>Login Page</h1>
 			<LoginAnimation on={isRouting}>
 				<Outlet/>

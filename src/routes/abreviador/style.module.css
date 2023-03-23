@@ -1,0 +1,12 @@
+.abrev_root {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+.abrev_root > div:nth-child(1) {
+    margin-bottom: 30px;
+} 

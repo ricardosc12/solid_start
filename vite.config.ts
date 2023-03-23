@@ -8,7 +8,7 @@ export default defineConfig({
       babel: (_, id) => ({
         plugins: [["solid-styled/babel", { source: id }]],
       }),
-      adapter: vercel(),
+      adapter: vercel()
     }),
   ],
 });
